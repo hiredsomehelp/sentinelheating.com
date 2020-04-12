@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Sentinel Heating & Cooling`,
     description: `Licensed HVAC service.`,
-    author: ``
+    author: ``,
   },
   plugins: [
-    "gatsby-plugin-eslint",
+    'gatsby-plugin-eslint',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -16,26 +16,26 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`
-      }
+        icon: `src/images/logo.png`,
+      },
     },
     {
-      resolve: "gatsby-plugin-postcss",
+      resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
           require(`autoprefixer`),
-          require(`cssnano`)
-        ]
-      }
+          require(`cssnano`),
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
-      }
+        purgeOnly: [`src/css/style.css`],
+      },
     },
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };

@@ -13,8 +13,9 @@ function Contact() {
               Have a question?
             </h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
-              Answer a few simple questions and we&apos;ll contact you when its
-              best for you.
+              Well you&apos;re in luck, we love talking about HVAC stuff! Fill out
+              this form, and we&apos;ll make sure to get in touch with you at your
+              earliest convenience.
             </p>
             <dl className="mt-8 text-base leading-6 text-gray-500">
               <div className="mt-6">
@@ -27,10 +28,11 @@ function Contact() {
                     strokeLinecap="round"
                     stokeLinejoin="round"
                     strokeWidth="2"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <span className="ml-3">+1 (647) 448-2544</span>
+                  <a href="tel:+16474482544" className="ml-3">+1 (647) 448-2544</a>
                 </dd>
               </div>
               <div className="mt-3">
@@ -40,7 +42,8 @@ function Contact() {
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
                     stroke="currentColor"
                     fill="none"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       stokeLinejoin="round"
@@ -52,8 +55,9 @@ function Contact() {
                     <a
                       href="mailto:support@sentinelheating.com?subject=Hi 👋"
                       target="_blank"
-                      rel="noopener noreferrer">
-                      support@sentinelheating.com
+                      rel="noopener noreferrer"
+                    >
+                      support@sentinelheating.ca
                     </a>
                   </span>
                 </dd>
@@ -66,16 +70,17 @@ function Contact() {
             <form
               action="#"
               method="POST"
-              className="grid grid-cols-1 row-gap-6">
+              className="grid grid-cols-1 row-gap-6"
+            >
               <div>
-                <label htmlFor="full_name" className="sr-only">
-                  Full name
+                <label htmlFor="name" className="sr-only">
+                  Name
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
-                    id="full_name"
+                    id="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
-                    placeholder="Full name"
+                    placeholder="Name (real or imaginary, we won't judge)"
                   />
                 </div>
               </div>
@@ -113,14 +118,16 @@ function Contact() {
                     id="message"
                     rows="4"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
-                    placeholder="Message"></textarea>
+                    placeholder="Message"
+                  ></textarea>
                 </div>
               </div>
               <div className="">
                 <span className="inline-flex rounded-md shadow-sm">
                   <button
                     type="submit"
-                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                  >
                     Submit
                   </button>
                 </span>

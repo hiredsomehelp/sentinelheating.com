@@ -20,7 +20,8 @@ function IndexPage() {
             Count on us
           </p>
           <p className="text-xl mt-4 max-w-xl text-gray-500">
-            Worry-free professional heating, cooling, and smart home services.
+            Worry-free professional home heating, ventilation, and air
+            conditioning services.
           </p>
         </div>
         <div className="md:w-3/5 mt-8 md:mt-0">

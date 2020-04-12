@@ -12,8 +12,9 @@ function Services() {
             All your home HVAC needs
           </h3>
           <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            We aim to provide the perfect balance between optimum temperature
+            control, enhanced indoor air quality, and maximum energy savings,
+            coupled with dependable and reliable operation.
           </p>
         </div>
 
@@ -40,12 +41,12 @@ function Services() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Heating services
+                    Furnance
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    No matter the size or location of your home, Sentinel will
+                    find the right furnance to help keep your home comfortable
+                    and effiecient.
                   </p>
                 </div>
               </div>
@@ -71,12 +72,12 @@ function Services() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Cooling services
+                    Air conditioner
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Keeping your family and furry companions cool during the
+                    summar is our specialty. We&apos;ll pair your home with the
+                    right air conditioner to keep your home cool and enjoyable.
                   </p>
                 </div>
               </div>
@@ -102,12 +103,12 @@ function Services() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Smart home services
+                    Water tank heaters
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    With a full line of water tank heaters to choose from,
+                    there&apos;s sure to be one that&apos;s the right fit for
+                    your family.
                   </p>
                 </div>
               </div>
@@ -133,12 +134,73 @@ function Services() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Maintanence, repair, tag thing
+                    Tankless water heater
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Tired of running out of hot water and higher energy bills?
+                    Tankless water heaters might be the right solution for you.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="mt-10 md:mt-0">
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <svg
+                      className="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        stokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h5 className="text-lg leading-6 font-medium text-gray-900">
+                    Maintenance
+                  </h5>
+                  <p className="mt-2 text-base leading-6 text-gray-500">
+                    We well maintained machine will last longer and make sure to
+                    keep your home comfortable in any condition. It&apos;s our
+                    job to ensure your home&apos;s heating and cooling systems
+                    are up to the task and running at its best.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="mt-10 md:mt-0">
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <svg
+                      className="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        stokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h5 className="text-lg leading-6 font-medium text-gray-900">
+                    Smart home
+                  </h5>
+                  <p className="mt-2 text-base leading-6 text-gray-500">
+                    Need help installing your smart thermostat? Not sure which
+                    if your unit is compatiable? We can help with that.
                   </p>
                 </div>
               </div>
