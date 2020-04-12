@@ -74,11 +74,11 @@ function Header() {
               title: `Services`,
             },
             {
-              route: `/about`,
+              route: `/#about`,
               title: `Our Work`,
             },
             {
-              route: `/about`,
+              route: `/#about`,
               title: `About Us`,
             },
           ].map((link, idx) => (
