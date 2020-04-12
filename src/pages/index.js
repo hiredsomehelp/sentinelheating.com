@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Services from '../components/services';
+import Contact from '../components/contact';
+
+import logo from '../images/logo.png';
 
 function IndexPage() {
   return (
@@ -11,29 +14,21 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block mx-auto w-1/2"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold no-underline text-gray-900"
-            href="https://tailwindcss.com/"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch md:justify-between overflow-hidden mt-8 md:mt-16">
+        <div className="flex flex-col items-center md:items-start justify-center">
+          <p className="text-4xl leading-10 tracking-tighter font-semibold">
+            Count on us
+          </p>
+          <p className="text-xl mt-4 max-w-xl text-gray-500">
+            Worry-free professional heating, cooling, and smart home services.
+          </p>
+        </div>
+        <div className="md:w-3/5 mt-8 md:mt-0">
+          <img src={logo} alt="Sentinel Logo" />
+        </div>
+      </div>
+      <Services />
+      <Contact />
     </Layout>
   );
 }
