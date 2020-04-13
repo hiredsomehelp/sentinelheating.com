@@ -167,7 +167,7 @@ function Services() {
                     Maintenance
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    We well maintained machine will last longer and make sure to
+                    A well maintained machine will last longer and make sure to
                     keep your home comfortable in any condition. It&apos;s our
                     job to ensure your home&apos;s heating and cooling systems
                     are up to the task and running at its best.
