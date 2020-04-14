@@ -28,8 +28,8 @@ function IndexPage() {
           <img src={logo} alt="Sentinel Logo" />
         </div>
       </div>
-      <Services />
-      <Contact />
+      <Services id="services" />
+      <Contact id="contact-us" />
     </Layout>
   );
 }
