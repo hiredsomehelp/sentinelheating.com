@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="bg-white text-gray-800 text-gray w-full">
-      <div className="flex flex-wrap items-center justify-between p-8">
+      <div className="flex flex-wrap items-center justify-between py-2">
         <div className="flex">
           <svg
             viewBox="0 0 384 512"
@@ -33,11 +33,11 @@ function Header() {
         </div>
         <div className="flex">
           <span className="block md:hidden mr-4 inline-flex rounded-md shadow-sm">
-            <button
-              type="button"
+            <a
+              href="#contact-us"
               className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-100 transition ease-in-out duration-150">
               Contact Us
-            </button>
+            </a>
           </span>
 
           <button
