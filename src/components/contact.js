@@ -136,6 +136,7 @@ function Contact(props) {
                     onChange={ev => setPhoneNo(ev.target.value)}
                     id="phone"
                     name="phone"
+                    type="tel"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Phone"
                     required
