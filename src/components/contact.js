@@ -1,6 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Contact(props) {
+  const [success, setSuccess] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNo, setPhoneNo] = useState('');
+  const [message, setMessage] = useState('');
+
+  function submitForm(e) {
+    e.preventDefault();
+    const formEndpoint = 'https://formspree.io/xpzjkjpz';
+    const payload = {name, email, phoneNo, message};
+
+    fetch(formEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(payload),
+    })
+      .then(() => setSuccess(true))
+      .catch(err => {
+        setSuccess(false);
+        console.log(err);
+      });
+  }
+
   return (
     <div className="relative bg-white" id={props.id}>
       <div className="absolute inset-0">
@@ -66,19 +92,20 @@ function Contact(props) {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form
-              action="#"
-              method="POST"
-              className="grid grid-cols-1 row-gap-6">
+            <form onSubmit={submitForm} className="grid grid-cols-1 row-gap-6">
               <div>
                 <label htmlFor="name" className="sr-only">
                   Name
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
+                    value={name}
+                    onChange={ev => setName(ev.target.value)}
                     id="name"
+                    name="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Name (real or imaginary, we won't judge)"
+                    required
                   />
                 </div>
               </div>
@@ -88,10 +115,14 @@ function Contact(props) {
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
+                    name="email"
+                    value={email}
+                    onChange={ev => setEmail(ev.target.value)}
                     id="email"
                     type="email"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Email"
+                    required
                   />
                 </div>
               </div>
@@ -101,9 +132,13 @@ function Contact(props) {
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
+                    value={phoneNo}
+                    onChange={ev => setPhoneNo(ev.target.value)}
                     id="phone"
+                    name="phone"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Phone"
+                    required
                   />
                 </div>
               </div>
@@ -113,10 +148,14 @@ function Contact(props) {
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <textarea
+                    value={message}
+                    onChange={ev => setMessage(ev.target.value)}
                     id="message"
+                    name="message"
                     rows="4"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
-                    placeholder="Message"></textarea>
+                    placeholder="Message"
+                    required></textarea>
                 </div>
               </div>
               <div className="">
@@ -127,6 +166,7 @@ function Contact(props) {
                     Submit
                   </button>
                 </span>
+                {success && <span className="ml-4 font-2xl">Sent!</span>}
               </div>
             </form>
           </div>
