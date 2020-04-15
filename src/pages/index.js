@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Services from '../components/services';
 import Contact from '../components/contact';
+import OurWork from '../components/ourwork';
 
 import logo from '../images/logo.png';
 
@@ -29,6 +30,7 @@ function IndexPage() {
         </div>
       </div>
       <Services id="services" />
+      <OurWork id="our-work" />
       <Contact id="contact-us" />
     </Layout>
   );

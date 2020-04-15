@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 function Contact(props) {
   const [success, setSuccess] = useState(false);
@@ -10,7 +10,7 @@ function Contact(props) {
   function submitForm(e) {
     e.preventDefault();
     const formEndpoint = 'https://formspree.io/xpzjkjpz';
-    const payload = {name, email, phoneNo, message};
+    const payload = { name, email, phoneNo, message };
 
     fetch(formEndpoint, {
       method: 'POST',
@@ -21,7 +21,7 @@ function Contact(props) {
       body: JSON.stringify(payload),
     })
       .then(() => setSuccess(true))
-      .catch(err => {
+      .catch((err) => {
         setSuccess(false);
         console.log(err);
       });
@@ -52,9 +52,10 @@ function Contact(props) {
                     fill="none"
                     stroke="currentColor"
                     strokeLinecap="round"
-                    stokeLinejoin="round"
+                    strokeLinejoin="round"
                     strokeWidth="2"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <a href="tel:+16474482544" className="ml-3">
@@ -69,10 +70,11 @@ function Contact(props) {
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
                     stroke="currentColor"
                     fill="none"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
-                      stokeLinejoin="round"
+                      strokeLinejoin="round"
                       strokeWidth="2"
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
@@ -81,7 +83,8 @@ function Contact(props) {
                     <a
                       href="mailto:support@sentinelheating.com?subject=Hi 👋"
                       target="_blank"
-                      rel="noopener noreferrer">
+                      rel="noopener noreferrer"
+                    >
                       support@sentinelheating.ca
                     </a>
                   </span>
@@ -100,7 +103,7 @@ function Contact(props) {
                 <div className="relative rounded-md shadow-sm">
                   <input
                     value={name}
-                    onChange={ev => setName(ev.target.value)}
+                    onChange={(ev) => setName(ev.target.value)}
                     id="name"
                     name="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
@@ -117,7 +120,7 @@ function Contact(props) {
                   <input
                     name="email"
                     value={email}
-                    onChange={ev => setEmail(ev.target.value)}
+                    onChange={(ev) => setEmail(ev.target.value)}
                     id="email"
                     type="email"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
@@ -133,7 +136,7 @@ function Contact(props) {
                 <div className="relative rounded-md shadow-sm">
                   <input
                     value={phoneNo}
-                    onChange={ev => setPhoneNo(ev.target.value)}
+                    onChange={(ev) => setPhoneNo(ev.target.value)}
                     id="phone"
                     name="phone"
                     type="tel"
@@ -150,20 +153,22 @@ function Contact(props) {
                 <div className="relative rounded-md shadow-sm">
                   <textarea
                     value={message}
-                    onChange={ev => setMessage(ev.target.value)}
+                    onChange={(ev) => setMessage(ev.target.value)}
                     id="message"
                     name="message"
                     rows="4"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Message"
-                    required></textarea>
+                    required
+                  ></textarea>
                 </div>
               </div>
               <div className="">
                 <span className="inline-flex rounded-md shadow-sm">
                   <button
                     type="submit"
-                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                  >
                     Submit
                   </button>
                 </span>

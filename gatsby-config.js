@@ -1,12 +1,21 @@
 module.exports = {
   siteMetadata: {
     title: `Sentinel Heating & Cooling`,
-    description: `Licensed HVAC service.`,
+    description: ``,
     author: ``,
   },
   plugins: [
     'gatsby-plugin-eslint',
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/customer-images/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
